@@ -23,7 +23,7 @@ body{
     align-items: center;
     position: fixed;
     top: 0;
-    z-index: 1000;
+    z-index: 1970;
     transition: all 0.7s linear;
 }
 
@@ -108,7 +108,7 @@ body{
     backdrop-filter: blur(14px);
     position: fixed ;
     right: -500px;
-    z-index: 1002;
+    z-index: 1990;
     transition: all 0.3s ease;
 }
 
@@ -182,7 +182,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1001;
+    z-index: 1899;
     background: rgba(9, 0, 38, 0.40);
     backdrop-filter: blur(7px);
     visibility: hidden;
@@ -1099,8 +1099,9 @@ body{
 
     #second .name{
         font-size: 1.125rem;
-        top: 415px;
-        left: 200px; 
+        top: 315px;
+        left: 270px; 
+        transform: rotate(0deg);
     }
 
     #second .social{
@@ -1122,7 +1123,7 @@ body{
     }
 
     #second .name{
-        left: 72px; 
+        left: 140px; 
     }
 
     #second .social{
@@ -1144,8 +1145,8 @@ body{
     }
 
     #second .name{
-        left: 0; 
-        top: 438px;
+        left: 60px; 
+        top: 360px;
     }
 
     #second .social{
@@ -1171,8 +1172,9 @@ body{
     }
 
     #second .name{
-        left: 0; 
-        top: 364px;
+        margin-left: 16px;
+        left: 30px; 
+        top: 284px;
         font-size: 1rem;
         z-index: 1010;
     }
@@ -1197,7 +1199,8 @@ body{
         top: 248px;
     }
     #second .name{
-        top: 384px;
+        top: 299px;
+        left: 0;
     }
 
     #second .social{
@@ -1223,7 +1226,7 @@ body{
     }
 
     #second .name{
-        top: 352px;
+        top: 280px;
         font-size: 0.8rem;
     }
     #second .social{
@@ -1445,7 +1448,7 @@ body{
         margin-right: 16px;
         top: 390px;
         flex-direction: column;
-        z-index: 2000;
+        z-index: 1700;
         
     }
 }
