@@ -149,4 +149,19 @@ document.addEventListener("DOMContentLoaded", () => {
     starSections.forEach((container) => createStars(container));
 });
 
+// skill animation
+
+document.addEventListener("DOMContentLoaded", () => {
+    const rows = document.querySelectorAll(".tools");
+
+    rows.forEach((row) => {
+        // Clone the content to create a seamless loop
+        const items = Array.from(row.children);
+        items.forEach((item) => {
+            const clone = item.cloneNode(true);
+            row.appendChild(clone);
+        });
+    });
+});
+
 
