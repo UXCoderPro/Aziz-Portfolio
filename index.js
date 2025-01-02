@@ -21,11 +21,13 @@ const close = document.getElementById('close');
 icon.addEventListener('click', () => {
     sideMenu.classList.toggle('open');
     overlay.classList.toggle('active');
+    document.body.classList.add("side-open");
 });
 
 overlay.addEventListener('click', () => {
     sideMenu.classList.remove('open');
     overlay.classList.remove('active');
+    document.body.classList.remove("side-open");
 });
 
 close.addEventListener('click', () => {
@@ -91,7 +93,7 @@ window.addEventListener('scroll', () => {
 
 function viewAndDownloadResume() {
     const viewUrl = 'https://drive.google.com/file/d/1OREiAgBMfuDaIn54CArz5oc8YiO0VB4S/view?usp=sharing';
-    const resumeUrl = 'https://drive.google.com/file/d/1OREiAgBMfuDaIn54CArz5oc8YiO0VB4S&export=download';
+    const resumeUrl = 'https://drive.google.com/uc?export=download&id=1OREiAgBMfuDaIn54CArz5oc8YiO0VB4S';
 
     
 
@@ -163,5 +165,48 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+
+
+
+
+// product 1 side menu
+
+// Get the side menu, overlay, and buttons
+const sideMenuu = document.getElementById("project1-side");
+const overlayy = document.getElementById("overlay-pro");
+const viewMoreBtn = document.getElementById("project1");
+
+// Function to open the side menu
+function openSideMenu() {
+    sideMenuu.classList.add("open");
+    overlayy.classList.add("visible");
+    
+     // Prevent background scrolling while preserving the current position
+     const scrollY = window.scrollY;
+     document.body.style.position = 'fixed';
+     document.body.style.top = `-${scrollY}px`;
+     document.body.dataset.scrollY = scrollY; // Save the scroll position
+}
+
+// Function to close the side menu
+function closeSideMenu() {
+    sideMenuu.classList.remove("open");
+    overlayy.classList.remove("visible");
+    
+    // Restore background scrolling
+    const scrollY = parseInt(document.body.dataset.scrollY || '0', 10);
+    document.body.style.position = '';
+    document.body.style.top = '';
+    window.scrollTo(0, scrollY); // Restore the scroll position
+    delete document.body.dataset.scrollY; // Remove stored position
+}
+
+// Open the menu when the "View More" button is clicked
+viewMoreBtn.addEventListener("click", openSideMenu);
+
+
+// Close the menu when the overlay is clicked
+overlayy.addEventListener("click", closeSideMenu);
 
 
