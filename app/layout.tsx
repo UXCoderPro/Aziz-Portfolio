@@ -18,6 +18,9 @@ const publicSans = Public_Sans({
 export const metadata: Metadata = {
   title: "Abdul Aziz Portfolio",
   description: "Designed and Developed by Abdul Aziz",
+  icons: {
+    icon: "@/Asset/favicon.ico",
+  },
 };
 
 export default function RootLayout({

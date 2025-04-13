@@ -1,10 +1,11 @@
 import Hero from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { FaHome } from "react-icons/fa";
+import Portfolio from "@/components/Portfolio";
 
 export default function Home() {
   return (
-    <main className="relative  bg-blue-gradient-200 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+    <main className="relative bgg-blue-100 max-w-full w-full flex justify-center items-center flex-col overflow-hidden">
       <FloatingNav
         navItems={[
           { name: "About", link: "#home", icon: <FaHome /> },
@@ -13,9 +14,9 @@ export default function Home() {
           { name: "Contact", link: "#skills", icon: <FaHome /> },
         ]}
       />
-      <div className="max-w-full w-full">
-        <Hero />
-      </div>
+
+      <Hero />
+      <Portfolio />
     </main>
   );
 }
