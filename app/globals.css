@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body {
+  width: 100%;
+}
+
 @theme inline {
   --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
 }
@@ -15,21 +19,101 @@
   }
 }
 
-@theme black {
-  --color-black-100: #000319;
-  --color-black-200: rgba(17, 25, 40, 0.75);
-  --color-black-300: rgba(255, 255, 255, 0.125);
+/* Custom font classes */
+.font-amiri {
+  font-family: var(--font-amiri), serif;
 }
 
-@theme white {
-  --color-white-100: #bec1dd;
-  --color-white-200: #c1c2d3;
+.font-publicsans {
+  font-family: var(--font-publicsans), sans-serif;
 }
+
+/* White */
+@theme white {
+  --white-100: #ffffff;
+  --white-200: #bec1dd;
+}
+
+.text-white-100 {
+  color: var(--white-100);
+}
+.text-white-200 {
+  color: var(--white-200);
+}
+.bg-white-100 {
+  background-color: var(--white-100);
+}
+.bg-white-200 {
+  background-color: var(--white-200);
+}
+
+/* Blue theme */
 
 @theme blue {
-  --color-blue-100: #e4ecff;
+  --blue-100: #000319;
+  --blue-gradient-200: linear-gradient(180deg, #0a1e4f -14.4%, #000319 89.77%);
+  --blue-gradient-300: linear-gradient(
+    270deg,
+    #000924 0%,
+    #061959 37.28%,
+    #071955 60.56%,
+    #000924 100%
+  );
 }
 
+.bg-blue-100 {
+  background-color: var(--blue-100);
+}
+.bg-blue-gradient-200 {
+  background: var(--blue-gradient-200);
+}
+
+.bg-blue-gradient-300 {
+  background: var(--blue-gradient-300);
+}
+.text-blue-100 {
+  color: var(--blue-100);
+}
+
+/* Purple Theme */
+
 @theme purple {
-  --color-purple-100: #cbacf9;
+  --purple-100: #cbacf9;
+  --purple-gradient-200: radial-gradient(
+    53.25% 53.26% at 50.15% 97.4%,
+    #a47cf3 0%,
+    #683fea 100%
+  );
+  --purple-300: #f051a3;
+}
+
+.bg-purple-100 {
+  background-color: var(--purple-100);
+}
+.bg-purple-gradient-200 {
+  background: var(--purple-gradient-200);
+}
+.text-purple-300 {
+  color: var(--purple-300);
+}
+.text-purple-100 {
+  color: var(--purple-100);
+}
+.text-purple-gradient-200 {
+  background: var(--purple-gradient-200);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.bg-purple-300 {
+  background-color: var(--purple-300);
+}
+
+/* stroke themes */
+
+@theme stroke {
+  --color-stroke: rgba(105, 113, 162, 0.4);
+}
+
+.border-stroke {
+  border: 1px solid var(--color-stroke);
 }

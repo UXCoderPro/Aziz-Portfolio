@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Amiri, Public_Sans } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "./provider";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// Initialize fonts first
+const amiri = Amiri({
   subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-amiri", // The variable to be used for the font
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const publicSans = Public_Sans({
   subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--font-publicsans", // The variable to be used for the font
 });
 
 export const metadata: Metadata = {
@@ -25,17 +27,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
+      <body className={`${amiri.variable} ${publicSans.variable}`}>
+        {children}
       </body>
     </html>
   );
