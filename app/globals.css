@@ -51,6 +51,7 @@ body {
 
 @theme blue {
   --blue-100: #000319;
+  --blue-200: #3692de;
   --blue-gradient-200: linear-gradient(180deg, #0a1e4f -14.4%, #000319 89.77%);
   --blue-gradient-300: linear-gradient(
     270deg,
@@ -59,10 +60,19 @@ body {
     #071955 60.56%,
     #000924 100%
   );
+  --blue-gradient-400: linear-gradient(
+    90deg,
+    rgba(180, 217, 252, 0) 12.5%,
+    #6db5f9 50%,
+    rgba(180, 217, 252, 0) 87.5%
+  );
 }
 
 .bgg-blue-100 {
   background-color: var(--blue-100);
+}
+.bgg-blue-200 {
+  background-color: var(--blue-200);
 }
 .bg-blue-gradient-200 {
   background: var(--blue-gradient-200);
@@ -73,6 +83,10 @@ body {
 }
 .text-blue-100 {
   color: var(--blue-100);
+}
+
+.bg-blue-gradient-400 {
+  background: var(--blue-gradient-400);
 }
 
 /* Purple Theme */
