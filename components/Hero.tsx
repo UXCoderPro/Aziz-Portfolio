@@ -9,7 +9,7 @@ import Grid from "./design/Grid";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36 bg-blue-gradient-200 max-w-full w-full ">
+    <div className="pb-20 pt-36">
       <div className="z-9">
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"

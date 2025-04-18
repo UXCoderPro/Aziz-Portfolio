@@ -3,7 +3,10 @@ import { cn } from "@/lib/utils";
 
 const Grid = () => {
   return (
-    <div className="absolute top-0 flex h-screen w-full items-center justify-center bg-blue-gradient-200">
+    <div
+      className="h-screen w-full bg-blue-gradient-200   bg-grid-white/[0.03] bg-grid-black-100/[0.2]
+       absolute top-0 left-0 flex items-center justify-center"
+    >
       <div
         className={cn(
           "absolute inset-0",
