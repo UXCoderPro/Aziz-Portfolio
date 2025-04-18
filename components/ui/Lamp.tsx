@@ -14,7 +14,7 @@ export function LampDemo() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl font-amiri"
+        className="mt-0 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl font-amiri"
       >
         About Me
       </motion.h1>
@@ -26,7 +26,7 @@ export function LampDemo() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className=" text-white-200 text-center font-publicsans text-[14px] md:text-[18px] lg:text-[20px]"
+        className=" text-white-200 text-center font-publicsans text-[14px] md:text-[18px] lg:text-[20px] max-w-7xl"
       >
         Hi! I&apos;m Abdul Aziz, a UI/UX Designer & Front End Web Developer with
         3 years of experience creating intuitive interfaces and responsive

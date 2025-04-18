@@ -10,7 +10,7 @@ import {
 
 const Portfolio = () => {
   return (
-    <div className="flex justify-center  items-center flex-col pb-4  w-full bgg-blue-100 z-10">
+    <div className="flex justify-center  items-center flex-col pb-4   bgg-blue-100 z-10">
       <Sparkles title="Portfolio" name="Abdul Aziz V I" />
 
       <div className="flex flex-col justify-center items-center gap-3.5  w-full">

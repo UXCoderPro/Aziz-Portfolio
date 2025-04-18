@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: "Abdul Aziz Portfolio",
   description: "Designed and Developed by Abdul Aziz",
   icons: {
-    icon: "@/Asset/favicon.ico",
+    icon: "../public/Fav-icon.svg",
   },
 };
 

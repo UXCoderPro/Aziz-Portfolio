@@ -10,6 +10,7 @@ const Profile = ({ src, alt }: { src: string; alt: string }) => {
         width={190}
         height={190}
         className="object-cover absolute bottom-0 left-1/2 transform -translate-x-1/2"
+        priority
       />
     </div>
   );
