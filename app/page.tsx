@@ -3,6 +3,7 @@ import { FloatingNav } from "@/components/ui/FloatingNav";
 import { FaHome } from "react-icons/fa";
 import Portfolio from "@/components/Portfolio";
 import About from "@/components/About";
+import RecentProjects from "@/components/RecentProjects";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Hero />
         <Portfolio />
         <About />
+        <RecentProjects />
       </div>
     </main>
   );

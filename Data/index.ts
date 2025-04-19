@@ -74,35 +74,35 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    title: "QR - Ordering (Digital Ordering",
+    des: "A user-friendly digital ordering system for restaurants and cafes, simplifying orders, enhancing satisfaction, and improving efficiency with a mobile-friendly design.",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    link: "https://www.figma.com/proto/COQynRKZwAJwfkjRkrM9Ml/Point-of-sale?page-id=219%3A46630&node-id=292-2&viewport=725%2C225%2C0.2&t=uNmICz3UBHRvD5vm-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=292%3A2&show-proto-sidebar=1",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    title: "Human Resource Management System",
+    des: "HRMS is a digital solution that streamlines workforce management by automating recruitment, onboarding, payroll, performance tracking, and compliance, reducing manual tasks and errors while improving communication.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    link: "/https://www.figma.com/proto/COQynRKZwAJwfkjRkrM9Ml/Point-of-sale?page-id=219%3A46630&node-id=313-586&viewport=725%2C225%2C0.2&t=uNmICz3UBHRvD5vm-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=313%3A586&show-proto-sidebar=1",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    title: "Point of Sale System",
+    des: "A modern POS system designed to reduce wait times and streamline operations in restaurants, retail, and hospitality. It offers fast processing, detailed reports, and an intuitive interface to enhance efficiency and customer satisfaction.",
     img: "/p3.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    link: "/https://www.figma.com/proto/COQynRKZwAJwfkjRkrM9Ml/Point-of-sale?page-id=219%3A46630&node-id=307-513&viewport=725%2C225%2C0.2&t=uNmICz3UBHRvD5vm-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=307%3A513&show-proto-sidebar=1",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    title: "Kiosk Ordering",
+    des: "A self-service system for quick-service restaurants, cafes, and retail, streamlining orders, reducing wait times, and ensuring an intuitive, accessible experience for all users.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    link: "/https://www.figma.com/proto/COQynRKZwAJwfkjRkrM9Ml/Point-of-sale?page-id=219%3A46630&node-id=298-2&viewport=725%2C225%2C0.2&t=uNmICz3UBHRvD5vm-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=298%3A2&show-proto-sidebar=1",
   },
 ];
 
@@ -115,25 +115,25 @@ export const testimonials = [
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Aziz was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Aziz was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Aziz was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Aziz was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },

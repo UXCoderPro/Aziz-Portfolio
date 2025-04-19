@@ -27,7 +27,7 @@ const Portfolio = () => {
               />
             }
             bgColor="bg-gradient-to-tr from-pink-500 to-yellow-500"
-            link=""
+            link="./"
           />
           <Socialmedia
             icon={
