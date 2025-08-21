@@ -1,15 +1,15 @@
 import { cn } from "../../lib/utils";
 import React from "react";
 
-const Grid = () => {
+const Grid = ({ rotate = "" }) => {
   return (
     <div
-      className="h-screen w-full bg-blue   bg-grid-white/[0.03] bg-grid-black-100/[0.2]
+      className="h-screen w-full bg-blue   bg-grid-white/[0.02] bg-grid-black-100/[0.2]
        absolute top-0 left-0 flex items-center justify-center"
     >
       <div
         className={cn(
-          "absolute inset-0",
+          `absolute inset-0 ${rotate}`,
           "[background-size:100px_100px]",
           "[background-image:linear-gradient(to_right,rgba(50,57,103,0.3)_1px,transparent_1px),linear-gradient(to_bottom,rgba(50,57,103,0.3)_1px,transparent_1px)]"
         )}

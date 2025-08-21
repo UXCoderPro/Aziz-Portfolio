@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className=" pb-40 z-9 bg-blue w-full h-auto flex justify-center items-center flex-col relative"
+      className=" pb-40 z-9 bg-blue w-full h-auto flex justify-start items-center flex-col relative"
     >
       <LampDemo />
       <ShootingStars />

@@ -28,7 +28,7 @@ const Hero = () => {
       </div>
       <Grid />
 
-      <div className="flex justify-center relative my-20 lg:mt-40 mt-28 z-10">
+      <div className="flex justify-center items-center relative lg:my-40 my-28  z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[70vw] flex flex-col items-center justify-center">
           <h1 className="uppercase tracking-widest lg:text-lg md:text-base text-sm text-center text-text-light max-w-100 font-amiri font-normal">
             Dynamic Web Magic with Creativity with code
