@@ -7,13 +7,16 @@ import { LampContainer, LampDemo } from "./uiPortfolio/Lamp";
 
 const AboutInfo = () => {
   return (
-    <div className=" bg-blue w-full h-fit flex justify-start items-center flex-col relative">
+    <section
+      id="skills"
+      className=" bg-blue w-full h-fit flex justify-start items-center flex-col relative"
+    >
       <ShootingStars />
       <StarsBackground />
       <Skills />
       <SkillDescription />
       <LampContainer rotate="rotate-180" />
-    </div>
+    </section>
   );
 };
 

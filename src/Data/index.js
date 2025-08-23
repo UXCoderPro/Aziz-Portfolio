@@ -29,6 +29,14 @@ import UI from "../assets/Description/UI.svg";
 import UX from "../assets/Description/UX.svg";
 import Visual from "../assets/Description/Visual.svg";
 
+import QR from "../assets/DigitalOrdering/QR.svg";
+import HRMS from "../assets/DigitalOrdering/HRMS.svg";
+import POS from "../assets/DigitalOrdering/POS.svg";
+import kiosk from "../assets/DigitalOrdering/kiosk.svg";
+import KDS from "../assets/DigitalOrdering/KDS.svg";
+import COS from "../assets/DigitalOrdering/COS.svg";
+import MAD from "../assets/DigitalOrdering/MAD.svg";
+
 export const gridItems = [
   {
     id: 1,
@@ -225,5 +233,64 @@ export const skillSet = [
     description:
       "Ensuring precision and consistency in design and development to deliver high-quality, polished outcomes.",
     icon: Detail,
+  },
+];
+
+export const projects = [
+  {
+    id: 1,
+    title: "QR - Ordering System",
+    des: "A user-friendly digital ordering system for restaurants and cafes, simplifying orders, enhancing satisfaction, and improving efficiency with a mobile-friendly design.",
+    img: QR,
+    iconLists: [Figma, Bal, Tail, React, love, Ai, Ps],
+    link: "https://www.figma.com/proto/COQynRKZwAJwfkjRkrM9Ml/Point-of-sale?page-id=219%3A46630&node-id=292-2&viewport=725%2C225%2C0.2&t=uNmICz3UBHRvD5vm-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=292%3A2&show-proto-sidebar=1",
+  },
+  {
+    id: 2,
+    title: "Human Resource Management System",
+    des: "HRMS is a digital solution that streamlines workforce management by automating recruitment, onboarding, payroll, performance tracking, and compliance, reducing manual tasks and errors while improving communication.",
+    img: HRMS,
+    iconLists: [Figma, Bal, React, Tail, love],
+    link: "/https://www.figma.com/proto/COQynRKZwAJwfkjRkrM9Ml/Point-of-sale?page-id=219%3A46630&node-id=313-586&viewport=725%2C225%2C0.2&t=uNmICz3UBHRvD5vm-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=313%3A586&show-proto-sidebar=1",
+  },
+  {
+    id: 3,
+    title: "Point of Sale System",
+    des: "A modern POS system designed to reduce wait times and streamline operations in restaurants, retail, and hospitality. It offers fast processing, detailed reports, and an intuitive interface to enhance efficiency and customer satisfaction.",
+    img: POS,
+    iconLists: [Figma, Bal, love, Ai, Ps],
+    link: "/https://www.figma.com/proto/COQynRKZwAJwfkjRkrM9Ml/Point-of-sale?page-id=219%3A46630&node-id=307-513&viewport=725%2C225%2C0.2&t=uNmICz3UBHRvD5vm-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=307%3A513&show-proto-sidebar=1",
+  },
+  {
+    id: 4,
+    title: "Kiosk Ordering",
+    des: "A self-service system for quick-service restaurants, cafes, and retail, streamlining orders, reducing wait times, and ensuring an intuitive, accessible experience for all users.",
+    img: kiosk,
+    iconLists: [Figma, Bal, love, Ai, Ps],
+    link: "/https://www.figma.com/proto/COQynRKZwAJwfkjRkrM9Ml/Point-of-sale?page-id=219%3A46630&node-id=298-2&viewport=725%2C225%2C0.2&t=uNmICz3UBHRvD5vm-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=298%3A2&show-proto-sidebar=1",
+  },
+  {
+    id: 5,
+    title: "Kitchen Display System",
+    des: "This project involved designing an intuitive and efficient UI for a Kitchen Display System (KDS) to streamline order management in fast-paced kitchen environments. The solution aimed to replace traditional ticketing systems with a digital interface, improving order accuracy, reducing preparation times, and enhancing overall operational efficiency..",
+    img: KDS,
+    iconLists: [Figma, Bal, love, Ai, Ps],
+    link: "/https://www.figma.com/proto/COQynRKZwAJwfkjRkrM9Ml/Point-of-sale?page-id=219%3A46630&node-id=298-2&viewport=725%2C225%2C0.2&t=uNmICz3UBHRvD5vm-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=298%3A2&show-proto-sidebar=1",
+  },
+  {
+    id: 6,
+    title: "Customer Ordering System",
+    des: "A table-based app that lets guests order food directly from their table and send it to the kitchen instantly. It also includes CRM features like membership login, discounts, and loyalty points, enhancing both customer convenience and restaurant engagement.",
+    img: COS,
+    iconLists: [Figma, Bal, love, Ai, Ps],
+    link: "/https://www.figma.com/proto/COQynRKZwAJwfkjRkrM9Ml/Point-of-sale?page-id=219%3A46630&node-id=298-2&viewport=725%2C225%2C0.2&t=uNmICz3UBHRvD5vm-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=298%3A2&show-proto-sidebar=1",
+  },
+  {
+    id: 7,
+    title: "Merchant Payment Application",
+    des: "A mobile app that tracks and displays all customer payments received by a shop in real time, similar to a soundbox payment system. It provides merchants with a clear view of daily transactions, payment methods, and transfer amounts, ensuring transparency and quick access to sales records.",
+    img: MAD,
+    iconLists: [Figma, Bal, love, Ai, Ps],
+    link: "/https://www.figma.com/proto/COQynRKZwAJwfkjRkrM9Ml/Point-of-sale?page-id=219%3A46630&node-id=298-2&viewport=725%2C225%2C0.2&t=uNmICz3UBHRvD5vm-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=298%3A2&show-proto-sidebar=1",
   },
 ];

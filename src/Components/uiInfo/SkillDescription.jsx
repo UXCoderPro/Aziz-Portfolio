@@ -1,9 +1,19 @@
 import React from "react";
 import { skillSet } from "../../Data/index";
+import { motion } from "motion/react";
 
 const SkillDescription = () => {
   return (
-    <div className="max-w-7xl h-auto grid lg:px-11 px-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8  items-start mt-72">
+    <motion.div
+      initial={{ opacity: 0.5, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{
+        delay: 0.3,
+        duration: 0.8,
+        ease: "easeInOut",
+      }}
+      className="max-w-7xl h-auto grid lg:px-11 px-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8  items-start mt-72"
+    >
       {skillSet.map((items, i) => (
         <div
           className="flex w-full h-auto flex-col items-start gap-2.5"
@@ -26,7 +36,7 @@ const SkillDescription = () => {
           </p>
         </div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 
