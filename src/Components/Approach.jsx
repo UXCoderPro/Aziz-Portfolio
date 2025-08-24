@@ -4,7 +4,10 @@ import { CanvasRevealEffectDemo } from "./uiApproach/Card";
 
 const Approach = () => {
   return (
-    <div className="bg-blue h-auto pb-28 w-full flex justify-start items-center flex-col relative ">
+    <section
+      id="approach"
+      className="bg-blue h-auto pb-28 w-full flex justify-start items-center flex-col relative "
+    >
       <Heading
         Title="My Approach"
         Paragrah=""
@@ -12,7 +15,7 @@ const Approach = () => {
       />
 
       <CanvasRevealEffectDemo />
-    </div>
+    </section>
   );
 };
 

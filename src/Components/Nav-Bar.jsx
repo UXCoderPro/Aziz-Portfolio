@@ -26,6 +26,10 @@ const NavbarSize = () => {
       name: "Projects",
       link: "#project",
     },
+    {
+      name: "My Approach",
+      link: "#approach",
+    },
   ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
