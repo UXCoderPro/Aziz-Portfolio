@@ -10,8 +10,24 @@ module.exports = {
         third: "moveInCircle 40s linear infinite",
         fourth: "moveHorizontal 40s ease infinite",
         fifth: "moveInCircle 20s ease infinite",
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        shimmer: "shimmer 2s linear infinite",
       },
       keyframes: {
+        shimmer: {
+          from: {
+            backgroundPosition: "0 0",
+          },
+          to: {
+            backgroundPosition: "-200% 0",
+          },
+        },
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
         moveHorizontal: {
           "0%": {
             transform: "translateX(-50%) translateY(-10%)",
@@ -63,6 +79,9 @@ module.exports = {
       colors: {
         blue: {
           DEFAULT: "#000319", // your main blue
+          200: "#3692de",
+          300: "rgba(255, 255, 255, 0.125)",
+          400: "#E4ECFF",
           light: "#3692DE", // light blue
           pink: "#F051A3", // pink
           sky: "#6DB5F9", // sky blue
@@ -88,6 +107,8 @@ module.exports = {
           "linear-gradient(180deg,rgba(109,181,249,0.00) 12.5%,rgba(109,181,249,0.80) 27.5%,#6DB5F9 50%,rgba(109,181,249,0.80) 72.5%,rgba(109,181,249,0.00) 87.5%)",
         "project-bg":
           "radial-gradient(178.15% 81.78% at 76.95% 84.57%, #0A1E4F 0%, #020118 100%)",
+        "blue-gradient-100":
+          "linear-gradient(90deg, rgba(180, 217, 252, 0) 12.5%, #6db5f9 50%, rgba(180, 217, 252, 0) 87.5% )",
       },
       boxShadow: {
         "purple-custom":

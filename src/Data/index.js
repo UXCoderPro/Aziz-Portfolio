@@ -294,3 +294,34 @@ export const projects = [
     link: "/https://www.figma.com/proto/COQynRKZwAJwfkjRkrM9Ml/Point-of-sale?page-id=219%3A46630&node-id=298-2&viewport=725%2C225%2C0.2&t=uNmICz3UBHRvD5vm-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=298%3A2&show-proto-sidebar=1",
   },
 ];
+
+export const testimonials = [
+  {
+    id: 1,
+    quote:
+      "Working with Abdul Aziz was a smooth and impactful experience. As our UI/UX Designer, Aji took the time to deeply understand our users pain points and business goals for our Turtle Adoption application. He translated complex requirements into a simple, engaging, and user-friendly design. His ability to combine research insights with creative design solutions helped us deliver an application that truly connects with users.",
+    name: "Jehan Raj",
+    title: "Director of Futeky Technologies",
+  },
+  {
+    id: 2,
+    quote:
+      "Abdul Aziz played a key role in shaping the user experience for our Gym Slot Booking application. He carefully researched user pain points and turned them into practical design solutions that made our app intuitive and easy to use. His attention to detail, structured design process, and focus on solving real problems helped us achieve a smooth and efficient booking flow. We truly value his creativity and dedication to delivering a user-friendly product.",
+    name: "Anto Joel",
+    title: "Director of Zenanvibe",
+  },
+  {
+    id: 3,
+    quote:
+      "Abdul Aziz was instrumental in the design and development of our product ecosystem, which included a Point of Sale system, kiosk ordering, kitchen display, HR management, QR ordering, merchant payment, and customer ordering solutions. Acting both as a Product Designer and Product Owner, he not only crafted user-friendly, scalable designs but also guided the product vision with clarity and strategy. His ability to balance user needs with business goals resulted in seamless experiences across multiple platforms. Abdul Aziz professionalism, leadership, and design thinking added immense value to our projects.",
+    name: "Dominic Tay",
+    title: "Director of Warely Technologies",
+  },
+  {
+    id: 4,
+    quote:
+      "Abdul Aziz designed a modern, elegant, and functional website for Midas Apparel that perfectly reflects our brand identity. His creative approach and eye for detail gave us a professional online presence that stands out in the fashion industry. We appreciated his ability to combine aesthetics with usability, delivering a sleek website that resonates with our customers.",
+    name: "Yasar Arafath",
+    title: "Director of Midas Apparel",
+  },
+];

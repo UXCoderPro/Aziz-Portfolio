@@ -6,6 +6,8 @@ import About from "./Components/About";
 import AboutInfo from "./Components/AboutInfo";
 import Project from "./Components/Project";
 import NavbarSize from "./Components/Nav-Bar";
+import Testimonial from "./Components/Testimonial";
+import Approach from "./Components/Approach";
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
       <About />
       <AboutInfo />
       <Project />
+      <Testimonial />
+      <Approach />
     </div>
   );
 };

@@ -3,7 +3,7 @@ import { ShootingStars } from "./uiPortfolio/ShootingStarts";
 import { StarsBackground } from "./uiPortfolio/Stars";
 import Skills from "./uiInfo/Skills";
 import SkillDescription from "./uiInfo/SkillDescription";
-import { LampContainer, LampDemo } from "./uiPortfolio/Lamp";
+import { LampContainer } from "./uiPortfolio/Lamp";
 
 const AboutInfo = () => {
   return (
