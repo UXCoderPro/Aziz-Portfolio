@@ -9,6 +9,7 @@ import NavbarSize from "./Components/Nav-Bar";
 import Testimonial from "./Components/Testimonial";
 import Approach from "./Components/Approach";
 import Footer from "./Components/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Testimonial />
         <Approach />
         <Footer />
+        <SpeedInsights />
       </div>
     </main>
   );
