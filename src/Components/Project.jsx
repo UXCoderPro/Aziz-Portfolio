@@ -9,6 +9,12 @@ import { GiChainedArrowHeads } from "react-icons/gi";
 import { GiCloudDownload } from "react-icons/gi";
 
 const Project = () => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/AbdulAziz.pdf";
+    link.download = "AbdulAziz_Resume.pdf";
+    link.click();
+  };
   return (
     <section
       id="project"
@@ -82,7 +88,11 @@ const Project = () => {
         ))}
       </div>
       <div className="flex mt-44 flex-col md:flex-row gap-6  w-full justify-center items-center ">
-        <a href="#behance">
+        <a
+          href="https://www.behance.net/abdulaziz92"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <MagicBtn
             title="View Behance Designs"
             icon={<GiChainedArrowHeads />}
@@ -91,15 +101,15 @@ const Project = () => {
             shadow={true}
           />
         </a>
-        <a href="#Resume">
-          <MagicBtn
-            title="Get Resume"
-            icon={<GiCloudDownload />}
-            position="right"
-            color="bg-btn-black"
-            outline={true}
-          />
-        </a>
+
+        <MagicBtn
+          title="Get Resume"
+          icon={<GiCloudDownload />}
+          position="right"
+          color="bg-btn-black"
+          outline={true}
+          handleClick={handleDownload}
+        />
       </div>
     </section>
   );

@@ -109,6 +109,8 @@ module.exports = {
           "radial-gradient(178.15% 81.78% at 76.95% 84.57%, #0A1E4F 0%, #020118 100%)",
         "blue-gradient-100":
           "linear-gradient(90deg, rgba(180, 217, 252, 0) 12.5%, #6db5f9 50%, rgba(180, 217, 252, 0) 87.5% )",
+        "black-gradient":
+          "linear-gradient(103deg,#04071D 16.66%,#0C0E23 81.61%)",
       },
       boxShadow: {
         "purple-custom":

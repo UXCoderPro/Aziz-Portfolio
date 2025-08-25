@@ -9,7 +9,7 @@ const SocialMedia = ({ icon, bgColor, link }) => {
       rel="noopener noreferrer"
       aria-label="social media link"
       className={`
-        flex flex-wrap justify-center items-center ${bgColor} lg:w-10 lg:h-10 md:w-7 md:h-7 w-7 h-7 p-1 lg:rounded-xl rounded-md text-white lg:text-2xl text-lg`}
+        flex flex-wrap justify-center items-center ${bgColor} lg:w-10 lg:h-10 md:w-7 md:h-7 w-7 h-7 p-1 lg:rounded-xl cursor-pointer rounded-md text-white lg:text-2xl text-lg`}
       initial={{ opacity: 0, scale: 0.9 }} // fade + shrink on mount
       animate={{ opacity: 1, scale: 1 }} // grow into place
       whileHover={{ scale: 1.05, y: -2 }} // subtle pop + lift

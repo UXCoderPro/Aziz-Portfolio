@@ -7,8 +7,16 @@ import { GiChainedArrowHeads } from "react-icons/gi";
 import { GiCloudDownload } from "react-icons/gi";
 import Profile from "./uiHero/Profile";
 import Aziz from "../assets/Aziz.png"; // Adjust the path as necessary
+import { Link } from "react-scroll";
 
 const Hero = () => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/AbdulAziz.pdf";
+    link.download = "AbdulAziz_Resume.pdf";
+    link.click();
+  };
+
   return (
     <div className="w-full h-screen ">
       <div className="z-9 ">
@@ -44,7 +52,7 @@ const Hero = () => {
           </p>
 
           <div className="flex mt-9 flex-col md:flex-row gap-6  w-full justify-center items-center ">
-            <a href="#about">
+            <Link to="project" smooth={true} duration={800}>
               <MagicBtn
                 title="View My Work"
                 icon={<GiChainedArrowHeads />}
@@ -52,16 +60,16 @@ const Hero = () => {
                 color="bg-btn-purple"
                 shadow={true}
               />
-            </a>
-            <a href="#Resume">
-              <MagicBtn
-                title="Get Resume"
-                icon={<GiCloudDownload />}
-                position="right"
-                color="bg-btn-black"
-                outline={true}
-              />
-            </a>
+            </Link>
+
+            <MagicBtn
+              title="Get Resume"
+              icon={<GiCloudDownload />}
+              position="right"
+              color="bg-btn-black"
+              outline={true}
+              handleClick={handleDownload}
+            />
           </div>
 
           <div className="flex justify-center items-center lg:mt-20 mt-14">

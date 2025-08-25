@@ -8,6 +8,7 @@ import {
   useMotionValueEvent,
 } from "motion/react";
 import Logo from "../../assets/logo.svg";
+import { Link } from "react-scroll";
 
 import React, { useRef, useState } from "react";
 
@@ -44,7 +45,7 @@ export const Navbar = ({ children, className }) => {
 
 export const NavBody = ({ children, className, visible }) => {
   return (
-    <motion.div
+    <motion.nav
       animate={{
         backdropFilter: visible ? "blur(10px)" : "none",
         boxShadow: visible
@@ -68,7 +69,7 @@ export const NavBody = ({ children, className, visible }) => {
       )}
     >
       {children}
-    </motion.div>
+    </motion.nav>
   );
 };
 
@@ -76,7 +77,7 @@ export const NavItems = ({ items, className, onItemClick }) => {
   const [hovered, setHovered] = useState(null);
 
   return (
-    <motion.div
+    <motion.nav
       onMouseLeave={() => setHovered(null)}
       className={cn(
         "absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-base font-medium font-amiri text-text-light transition duration-200 hover:text-white lg:flex lg:space-x-2",
@@ -84,29 +85,31 @@ export const NavItems = ({ items, className, onItemClick }) => {
       )}
     >
       {items.map((item, idx) => (
-        <a
+        <Link
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
-          className="relative px-4 py-2 text-white dark:text-text-light hover:text-white"
+          className="relative px-4 py-2 text-white dark:text-text-light cursor-pointer hover:text-white"
           key={`link-${idx}`}
-          href={item.link}
+          to={item.link}
+          smooth={true}
+          duration={800}
         >
           {hovered === idx && (
             <motion.div
               layoutId="hovered"
-              className="absolute inset-0 h-full w-full rounded-full  bg-gray-100 dark:bg-text-dark"
+              className="absolute inset-0 h-full w-full rounded-full   bg-gray-100 dark:bg-text-dark"
             />
           )}
           <span className="relative z-20">{item.name}</span>
-        </a>
+        </Link>
       ))}
-    </motion.div>
+    </motion.nav>
   );
 };
 
 export const MobileNav = ({ children, className, visible }) => {
   return (
-    <motion.div
+    <motion.nav
       animate={{
         backdropFilter: visible ? "blur(10px)" : "none",
         boxShadow: visible
@@ -130,7 +133,7 @@ export const MobileNav = ({ children, className, visible }) => {
       )}
     >
       {children}
-    </motion.div>
+    </motion.nav>
   );
 };
 
@@ -211,6 +214,8 @@ export const NavbarButton = ({
       href={href || undefined}
       className={cn(baseStyles, variantStyles[variant], className)}
       {...props}
+      target="_blank"
+      rel="noopener noreferrer"
     >
       {children}
     </Tag>

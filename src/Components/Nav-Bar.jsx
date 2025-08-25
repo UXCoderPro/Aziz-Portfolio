@@ -16,19 +16,19 @@ const NavbarSize = () => {
   const navItems = [
     {
       name: "About",
-      link: "#about",
+      link: "about",
     },
     {
       name: "Skills",
-      link: "#skills",
+      link: "skills",
     },
     {
       name: "Projects",
-      link: "#project",
+      link: "project",
     },
     {
       name: "My Approach",
-      link: "#approach",
+      link: "approach",
     },
   ];
 
@@ -45,7 +45,12 @@ const NavbarSize = () => {
             <NavbarButton href="https://cal.com/aji-buzcqa" variant="secondary">
               Books a Call
             </NavbarButton>
-            <NavbarButton variant="primary">Contact Me</NavbarButton>
+            <NavbarButton
+              variant="primary"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=aziaji46@gmail.com"
+            >
+              Contact Me
+            </NavbarButton>
           </div>
         </NavBody>
 
